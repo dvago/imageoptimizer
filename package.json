@@ -1,0 +1,15 @@
+{
+  "name": "FileOptimization",
+  "version": "0.0.1",
+  "description": "Read files from specific folder and optimise them using a specific compression",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Davide Vago",
+  "license": "MIT",
+  "devDependencies": {
+    "chalk": "^1.1.1",
+    "gm": "^1.21.1",
+  }
+}
