@@ -7,7 +7,7 @@
   ~: node app.js -p "C:\SomeFolder\SomeSubfolder" -s "format"
 ```
 
-_ex. node app.js -p "C:\Users\user\Pictures" -s "400x550,120x280,320x150"_
+_ex. node app.js -p "C:\Users\Username\Pictures" -s "400x550,120x280,320x150"_
 
 ###Flags:
 
