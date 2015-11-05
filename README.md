@@ -1,5 +1,7 @@
 # imageoptimizer 
 
+This script resizes, compress and minify jpg images based on single or multiple formats defined by the user.
+The quality is already defined to fit the best quality/filesize ratio
 
 ###How to run the script:
 
