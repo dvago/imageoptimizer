@@ -1,7 +1,9 @@
 # imageoptimizer 
 
 This script resizes, compress and minify jpg images based on single or multiple formats defined by the user.
-The quality is already defined to fit the best quality/filesize ratio
+The quality is already defined to fit the best quality/filesize ratio.
+
+Assuming you have already set up your machine with node, before launch the script you must install the dependencies through **npm i**
 
 ###How to run the script:
 
