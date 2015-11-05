@@ -1,15 +1,24 @@
 {
   "name": "FileOptimization",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Read files from specific folder and optimise them using a specific compression",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Davide Vago",
+  "author": {
+    "name" : "Davide Vago",
+    "email" : "me@davidevago.com",
+    "url" : "http://www.davidevago.com/"
+  }, 
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/dvago/imageoptimizer.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "chalk": "^1.1.1",
     "gm": "^1.21.1",
+    "optimist": "^0.6.1"
   }
 }

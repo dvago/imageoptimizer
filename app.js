@@ -1,7 +1,6 @@
 var fs = require('fs'),
   gm = require('gm'),
   path = require('path'),
-  walk = require('walk'),
   howto = require('./howto.js'),
   compressImages = require('./compressimage.js'),
   chalk = require('chalk'),
