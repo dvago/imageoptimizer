@@ -12,7 +12,7 @@ module.exports = function(file, width, height, path, filename) {
         .gravity('Center')
         .crop(width, height)
         .strip()
-        .quality(90)
+        .quality(88)
         .interlace('line')
         .compress('JPEG')
         .minify(5)

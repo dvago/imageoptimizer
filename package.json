@@ -7,13 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-    "name" : "Davide Vago",
-    "email" : "me@davidevago.com",
-    "url" : "http://www.davidevago.com/"
-  }, 
-  "repository" : { 
-    "type" : "git",
-    "url" : "https://github.com/dvago/imageoptimizer.git"
+    "name": "Davide Vago",
+    "email": "me@davidevago.com",
+    "url": "http://www.davidevago.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvago/imageoptimizer.git"
   },
   "license": "MIT",
   "devDependencies": {

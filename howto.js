@@ -2,9 +2,13 @@ var chalk = require('chalk');
 
 module.exports = function() {
   console.log('');
-  console.log(chalk.yellow('-------------------------------------------------------------------'));
-  console.log(chalk.yellow.bold('|                  How to use this magic program                  |'));
-  console.log(chalk.yellow('-------------------------------------------------------------------'));  
+  console.log(chalk.green('                          Image optimization tool                      '));
+  console.log('');
+  console.log(chalk.green('                               by davide vago                            '));
+  console.log('');
+  console.log(chalk.yellow('---------------------------------------------------------------------------'));
+  console.log(chalk.yellow.bold('|                      How to use this magic program                      |'));
+  console.log(chalk.yellow('---------------------------------------------------------------------------'));  
   console.log('');
   
   console.log(chalk.red('-p') + '        ' + chalk.white('define the path of your folder, note: the script is recursive'));
