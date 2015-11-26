@@ -20,3 +20,7 @@ _ex. node app.js -p "C:\Users\Username\Pictures" -s "400x550,120x280,320x150"_
 **-p** define the path of your folder, note: the script is recursive 
 
 **-s** define the sizes you want create
+
+**-a** define the folder name you want create inside the path specified using -p flag
+
+**-e** define the subfolder name you want to exclude from scan
