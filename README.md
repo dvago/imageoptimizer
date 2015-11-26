@@ -5,6 +5,10 @@ The quality is already defined to fit the best quality/filesize ratio.
 
 Assuming you have already set up your machine with node, before launch the script you must install the dependencies through **npm i**
 
+26 Nov 2015
+
+Added a second layer of compression using the **Mozilla Jpeg project** (https://github.com/mozilla/mozjpeg)
+
 ###How to run the script:
 
 ```javascript
