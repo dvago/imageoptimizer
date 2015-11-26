@@ -17,5 +17,8 @@ module.exports = function() {
   console.log(chalk.red('-s') + '        ' + chalk.white('define the sizes you want create'));
   console.log('          ' + chalk.white('example: ') + chalk.green('-s "640x6400,80x80,120x120,300x450"'));
   console.log('');
+  console.log(chalk.red('-a') + '        ' + chalk.white('define the folder name you want create inside the path specified with -p flag'));
+  console.log('          ' + chalk.white('example: ') + chalk.green('-s "thumbnail,banners,slides"'));
+  console.log('');
   
 }
