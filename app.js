@@ -13,8 +13,8 @@ if ((args.h) || (args.help) || !args.s || !args.p) {
 }
 
 formatList = args.s.replace(' ', '').split(',');
-aliasFolder = args.a.replace(' ', '').split(',');
-excludedFolder = args.e.replace(' ', '').split(',');
+aliasFolder = args.a ? args.a.replace(' ', '').split(',') : [];
+excludedFolder = args.e ? args.e.replace(' ', '').split(',') : [];
 imageRootFolder = args.p.charAt(args.p.length) === '/' ? args.p : args.p + '/';
 imageRootFolder = path.resolve(imageRootFolder.replace(/\\/g, "/"));
 
@@ -35,7 +35,7 @@ var filterFileTree = function (currentPath) {
       if (fileExt === 'jpg') {
         for (var c in formatList) {
           var newDim = formatList[c],
-              alias = aliasFolder[c],
+              alias = aliasFolder[c] ? aliasFolder[c] : '' ,
               newWidth = newDim.substr(0, newDim.indexOf('x')),
               newHeight = newDim.substr(newDim.indexOf('x') + 1, newDim.length);
           (alias.length > 0) ? newPath = currentPath + '/' + alias : newPath = currentPath + '/' + newDim;
