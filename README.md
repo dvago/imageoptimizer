@@ -8,10 +8,10 @@ Assuming you have already set up your machine with node, before launch the scrip
 ###How to run the script:
 
 ```javascript
-  ~: node app.js -p "C:\SomeFolder\SomeSubfolder" -s "format"
+  ~: node app.js -p "C:\SomeFolder\SomeSubfolder" -s "format" -a "alias" -e "excluded folders"
 ```
 
-_ex. node app.js -p "C:\Users\Username\Pictures" -s "400x550,120x280,320x150"_
+_ex. node app.js -p "C:\Users\Username\Pictures" -s "400x550,120x280,320x150" -a "Thumbnails,ProfilePics,Covers" -e "cache,temp"_
 
 ###Flags:
 
