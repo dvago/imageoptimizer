@@ -18,7 +18,7 @@ module.exports = function() {
   console.log('          ' + chalk.white('example: ') + chalk.green('-s "640x6400,80x80,120x120,300x450"'));
   console.log('');
   console.log(chalk.red('-a') + '        ' + chalk.white('define the folder name you want create inside the path specified with -p flag'));
-  console.log('          ' + chalk.white('example: ') + chalk.green('-s "thumbnail,banners,slides"'));
+  console.log('          ' + chalk.white('example: ') + chalk.green('-a "thumbnail,banners,slides"'));
   console.log('');
   console.log(chalk.red('-e') + '        ' + chalk.white('define the subfolder name you want to exclude from scan'));
   console.log('          ' + chalk.white('example: ') + chalk.green('-e "temp,cache"'));

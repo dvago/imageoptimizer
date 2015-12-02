@@ -32,7 +32,7 @@ var filterFileTree = function (currentPath) {
       var fileName = files[i];
       var fileExt = fileName.substring(fileName.indexOf('.') + 1);
 
-      if (fileExt === 'jpg') {
+      if (fileExt === 'jpg' || fileExt === 'png') {
         for (var c in formatList) {
           var newDim = formatList[c],
               alias = aliasFolder[c] ? aliasFolder[c] : '' ,
@@ -55,4 +55,4 @@ var filterFileTree = function (currentPath) {
 filterFileTree(imageRootFolder);
 
 console.log(chalk.green('-----'));
-(countFiles > 0) ? console.log(chalk.green('Generating ' + chalk.yellow.bold(countFiles) + ' files')) : console.log(chalk.yellow('No images must be optimised'));
+(countFiles > 0) ? console.log(chalk.green('Processing ' + chalk.yellow.bold(countFiles) + ' files')) : console.log(chalk.yellow('No images must be optimised'));
