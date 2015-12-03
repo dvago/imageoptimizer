@@ -2,8 +2,6 @@ var gm = require('gm'),
     fs = require('fs'),
     chalk = require('chalk'),
     execFile = require('child_process').execFile,
-    imagemin = require('imagemin'),
-    optimage = require('optimage'),
     mozjpeg = require('mozjpeg');
 
 module.exports = function(file, width, height, path, filename) {
@@ -12,26 +10,12 @@ module.exports = function(file, width, height, path, filename) {
   var readStream = fs.createReadStream(file),
     newFile = path + '/' + filename,
     finalCompressor = function(path, newFile, opti) {
-      new imagemin()
-          .src(newFile)
-          .use(imagemin.jpegtran({progressive: true}))
-          .run(function (err, files) {
-
-          optimage({
-            inputFile: newFile,
-            outputFile: newFile
-          }, function (err, res) {
-
-            if (!err) {
-              execFile(mozjpeg, ['-outfile', opti, newFile], function (err) {
-                console.log(chalk.green('new optimised file: ') + opti);
-                setTimeout(function () {
-                  fs.unlink(newFile);
-                }, 100);
-              });
-            }
-          });
-        })
+      execFile(mozjpeg, ['-outfile', opti, newFile], function (err) {
+        console.log(chalk.green('new optimised file: ') + opti);
+        setTimeout(function () {
+          fs.unlink(newFile);
+        }, 100);
+      });
     };
 
 
@@ -62,7 +46,7 @@ module.exports = function(file, width, height, path, filename) {
               .resize(width, height, '^')
               .crop(width, height)
               .filter('hamming')
-              .unsharp(0.5)
+              .unsharp(0.25)
               .quality(90)
               .interlace('Line')
               .strip()
